@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pradeep Sahu Portfolio</title>
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    /* Navbar Styling */
+    nav {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff6f61;
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+	  /* Skills Section */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .skill-item {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .skill-item h3 {
+      font-size: 1.2rem;
+      color: #1a1a2e;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-item p {
+      color: #555;
+    }
+
+    /* Projects Section */
+    .projects {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .projects h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+      color: #16213e;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transform: scale(1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .project img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 1rem;
+    }
+
+    .project-content h3 {
+      font-size: 1.5rem;
+      color: #1a1a2e;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-content p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    .project-content a {
+      text-decoration: none;
+      color: #ff6f61;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .project-content a:hover {
+      color: #1a1a2e;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div>Pradeep Sahu</div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Software Developer | Full Stack Developer</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="projects">
+    <h2>About Me</h2>
+    <p>I am Pradeep Sahu, an experienced Full Stack Developer with expertise in .NET Core, Angular, SQL Server, and more. Passionate about building innovative solutions that drive organizational success.</p>
+  </section>
+  
+    <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-item">
+        <h3>Programming Languages</h3>
+        <p>C#, SQL, JavaScript</p>
+      </div>
+      <div class="skill-item">
+        <h3>Frontend Technologies</h3>
+        <p>HTML, CSS, Bootstrap, jQuery, Angular (Familiar)</p>
+      </div>
+      <div class="skill-item">
+        <h3>Backend Technologies</h3>
+        <p>.NET Core, ASP.NET MVC, ADO.NET, Web API</p>
+      </div>
+      <div class="skill-item">
+        <h3>Databases</h3>
+        <p>MS SQL Server</p>
+      </div>
+      <div class="skill-item">
+        <h3>Tools</h3>
+        <p>Visual Studio, VS Code, MS Office</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project">
+        <img src="https://via.placeholder.com/300x150" alt="Appliance Management System">
+        <div class="project-content">
+          <h3>Appliance Management System</h3>
+          <p>Developed for Panasonic to manage appliance data effectively.</p>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project">
+        <img src="https://via.placeholder.com/300x150" alt="Breakthrough NGO">
+        <div class="project-content">
+          <h3>Breakthrough NGO</h3>
+          <p>Streamlined employee details and travel logistics for an NGO.</p>
+          <a href="https://www.btconnect.org.in/" target="_blank">View Project</a>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project">
+        <img src="https://via.placeholder.com/300x150" alt="Grafana Dashboard">
+        <div class="project-content">
+          <h3>Grafana Dashboard</h3>
+          <p>Visualized production metrics for Denso, enhancing transparency.</p>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project">
+        <img src="https://via.placeholder.com/300x150" alt="Aptara Online Editor POC">
+        <div class="project-content">
+          <h3>Aptara Online Editor POC</h3>
+          <p>A proof of concept project showcasing editing features.</p>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="project">
+        <img src="https://via.placeholder.com/300x150" alt="PKC Intranet">
+        <div class="project-content">
+          <h3>PKC Intranet</h3>
+          <p>Enhanced internal communication by managing announcements and events.</p>
+        </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="project">
+        <img src="https://via.placeholder.com/300x150" alt="PKC IMS">
+        <div class="project-content">
+          <h3>PKC IMS</h3>
+          <p>Maintained company records, ensuring accurate tracking of operations.</p>
+        </div>
+      </div>
+      <!-- Project 7 -->
+      <div class="project">
+        <img src="https://via.placeholder.com/300x150" alt="Panchayat Sahayak Portal">
+        <div class="project-content">
+          <h3>UP Panchayat Sahayak Portal</h3>
+          <p>Surveyed families and facilities across Uttar Pradesh Panchayats.</p>
+          <a href="http://passist.upprd.in/" target="_blank">View Project</a>
+        </div>
+      </div>
+      <!-- Project 8 -->
+      <div class="project">
+        <img src="https://via.placeholder.com/300x150" alt="Swachh Bharat Mission">
+        <div class="project-content">
+          <h3>Swachh Bharat Mission</h3>
+          <p>Monitored toilet facilities in UP villages for Panchayati Raj.</p>
+          <a href="http://sbm.upprd.in/" target="_blank">View Project</a>
+        </div>
+      </div>
+      <!-- Project 9 -->
+      <div class="project">
+        <img src="https://via.placeholder.com/300x150" alt="Bal Shramik Vidya Yojana">
+        <div class="project-content">
+          <h3>Bal Shramik Vidya Yojana</h3>
+          <p>Assisted working children to join schools by tracking their status.</p>
+          <a href="https://bsvy.in/" target="_blank">View Project</a>
+        </div>
+      </div>
+      <!-- Project 10 -->
+      <div class="project">
+        <img src="https://via.placeholder.com/300x150" alt="Panchayat Sachiv Attendance">
+        <div class="project-content">
+          <h3>Panchayat Sachiv Attendance</h3>
+          <p>Monitored attendance for Jaunpur Panchayat Sachivs.</p>
+          <a href="http://jaunpur.upasthiti.in/" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="projects">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sahupradeep3196@gmail.com">sahupradeep3196@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/pradeep-sahu-2bb184181" target="_blank">Visit Profile</a></p
